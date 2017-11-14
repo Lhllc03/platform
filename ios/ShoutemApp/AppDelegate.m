@@ -30,9 +30,6 @@
     [audioSession setCategory:AVAudioSessionCategoryPlayback
                         error:&setCategoryError];
 
-  // Appetizer.io params check
-  NSDictionary *initialProperties = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"initialProps"];
-
 #ifdef DEBUG
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 #else
